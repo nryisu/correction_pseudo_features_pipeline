@@ -12,7 +12,7 @@ Below R package needs to be installed (The R version is 3.6.1):
 - data.table
 
 # Filter low quality cells, low expression genes and classify the cell cycle phase
-`#`This script will output the mesc_npc.txt_cycle.rds file, we rename it to mesc_npc_cycle.rds for DEGs anaylsis.
+`#`This script will output the mesc_npc.txt_cycle.rds file, we rename it to mesc_npc_cycle.rds for DEGs anaylsis.<br>
 Rscripts 0_qc.R mesc_npc.txt
 
 # Identify the DEGs and enrichment analysis
