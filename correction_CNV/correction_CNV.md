@@ -7,3 +7,5 @@ The annotation folder contains detailed information for analysis.
 sh 0index.sh
 ### alignment
 sh 1alignment.sh 
+### correction
+Rscript correction.R 
