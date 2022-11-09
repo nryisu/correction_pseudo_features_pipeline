@@ -11,3 +11,6 @@ You will need the following software:
 - featureCounts v1.6.4
 - MAST v1.10.0
 ## correction_CNV
+The correction_CNV folder contains detailed information for correction pseudo CNV induced by extended S phase in cell composition.
+## scRNA_DEGs_pipeline
+The scRNA_DEGs_pipeline folder contains detailed information for correction DEGs induced by cell cycle composition.
