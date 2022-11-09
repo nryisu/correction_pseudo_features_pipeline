@@ -50,7 +50,7 @@ sce <- sce[,keep]
 dim(sce)
 set.seed(100)
 counts<-counts(sce)
-load("../annotation/merge.pair.RData")
+load("../annotation/mm.merge.pair.RData")
 ########################classify cell cycle in mesc 
 umi <- SingleCellExperiment(assays = list(counts = as.matrix(counts[,1:111])),colData=colnames(counts[,1:111]))
 assignments <- cyclone(umi, merge.pair, gene.names=rownames(counts(umi)))
@@ -75,7 +75,7 @@ merge<-c(as.vector(merge.pair$G1$first),as.vector(merge.pair$G1$second),
 		as.vector(merge.pair$S$first),as.vector(merge.pair$S$second),
 		as.vector(merge.pair$G2M$first),as.vector(merge.pair$G2M$second))
 merge <- merge[!duplicated(merge)]
-length(merge) #890
+length(merge)#890
 mesc <- mesc[rowSums(mesc)>0,]
 # remove genes that are not seen in a sufficient number of cells
 mesc<-mesc[rowSums(mesc>0)>=5, ] #0.05
