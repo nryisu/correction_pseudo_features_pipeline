@@ -15,5 +15,5 @@ Below R package needs to be installed (The R version is 3.6.1):
 `#`This script will output the mesc_npc.txt_cycle.rds file, we rename it to mesc_npc_cycle.rds for DEGs anaylsis.<br>
 Rscripts 0_qc.R mesc_npc.txt
 
-# Identify the DEGs and enrichment analysis
+# Identify the DEGs
 Rscripts 1_deg.R mesc_npc_cycle.rds
