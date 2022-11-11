@@ -10,4 +10,4 @@ sh 1alignment.sh
 ### calculate reads depth from bam file, and the output file name like "mesc.rt.uniq.txt".
 sh 2statistics.sh
 ### correction
-Rscript correction.R mesc.rt.uniq.txt
+Rscript 3correction.R mesc.rt.uniq.txt
