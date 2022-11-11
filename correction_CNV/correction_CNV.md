@@ -7,5 +7,7 @@ The annotation folder contains detailed information for analysis.
 sh 0index.sh
 ### alignment
 sh 1alignment.sh 
+### calculate reads depth from bam file, and the output file name like "mesc.rt.uniq.txt".
+sh 2statistics.sh
 ### correction
-Rscript correction.R 
+Rscript correction.R mesc.rt.uniq.txt
